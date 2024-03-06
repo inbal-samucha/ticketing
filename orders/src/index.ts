@@ -8,6 +8,7 @@ import { PaymentCreatedListener } from './events/listener/payment-created-listen
 
 
 const start = async () => {
+  console.log('Starting...');
   //Checking if all our environment variables are set
   if(!process.env.JWT_KEY){
     throw new Error('JWT_KEY must be defined')
